@@ -176,11 +176,6 @@ void transmit(int blnOn)
 int main (int argc, char** argv)
 {
 	// Vérification des permissions
-	if (setuid(0))
-	{
-		perror("setuid");
-		return 1;
-	}
 
 	scheduler_realtime();
 
